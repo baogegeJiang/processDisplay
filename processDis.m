@@ -10,7 +10,7 @@ if dtime <dtimeMin && per<0.99
     l=L;clock1=clock0;
     return;
 end
-strPer=sprintf('% 3d%%',round(per*100));
+strPer=sprintf('%3d%%',round(per*100));
 N=min(len,max(0,round(per*len)));
 strC2=[repmat(c2,1,N),repmat(' ',1,(len-N)*length(c2))];
 str=sprintf('%s %s %s %s %s %s',str1,strPer,c1,strC2,c1,str2);
